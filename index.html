@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- akhir font -->
+    <!-- icon boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- icon iconify -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <!-- animasi aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-aos="fade-down">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/home/logo.png" alt="Logo" width="70" height="54" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About Us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Room">Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Facilities">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" class="btn color-blue">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Home -->
+    <section class="home" id="Home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="judul-text">Welcome to Velora Hotel & Resto</h1>
+                    <div class="booking-form position-absolute start-50 translate-middle-x " data-aos="fade-up">
+                        <div class="row g-0">
+                            <!-- Check In -->
+                            <div class="col border-end border-light">
+                                <div class="booking-field">
+                                    <label class="booking-label">Check In</label>
+                                    <input type="date" class="booking-input" name="checkin-date"
+                                        placeholder="Select date">
+                                </div>
+                            </div>
+                            <!-- Check Out -->
+                            <div class="col border-end border-light">
+                                <div class="booking-field">
+                                    <label class="booking-label">Check Out</label>
+                                    <input type="date" class="booking-input" name="checkout-date"
+                                        placeholder="Select date">
+                                </div>
+                            </div>
+                            <!-- Guest -->
+                            <div class="col border-end border-light">
+                                <div class="booking-field">
+                                    <label class="booking-label">Guest</label>
+                                    <select class="booking-input" name="guest-count">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Promo Code -->
+                            <div class="col">
+                                <div class="booking-field">
+                                    <label class="booking-label">Promo Code</label>
+                                    <input type="text" class="booking-input" name="promo-code" placeholder="promo code">
+                                </div>
+                            </div>
+                            <!-- Book Now Button -->
+                            <div class="col-auto">
+                                <button type="button" class="booking-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Home -->
+
+    <!-- Promo -->
+    <section class="paddingtp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-3" data-aos="fade-right">
+                    <a href="#">
+                        <img src="img/home/2.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <a href="#">
+                        <img src="img/home/3.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir promo -->
+
+    <!-- About us -->
+    <section class="py-5" style="background-color: #F7FAFC;" id="About Us">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-lg-12 text-cinzel text-center" data-aos="fade-up">
+                    <h6>About Us – Velora Hotel & Resto</h6>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 100px;">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="img/home/4.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class=" text-cinzel fw-bold">Where Elegance Meets Comfort</h2>
+                    <p class="text-poppins fs-5">Di Velora Hotel & Resto, kami percaya bahwa setiap <br>
+                        perjalanan layak mendapatkan pengalaman yang tak
+                        terlupakan. Dengan desain modern yang dipadukan <br>
+                        sentuhan elegan, Velora hadir sebagai tempat yang <br>
+                        tidak hanya menawarkan kenyamanan menginap, <br> tetapi
+                        juga suasana yang menenangkan dan penuh kehangatan.</p>
+                    <a type="button" class="btn color-blue fw-bold" href="pull-pages/about.html">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir About Us -->
+
+   <!-- Room -->
+<section class="paddingtp" id="Room">
+  <div class="container">
+    <!-- Judul -->
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-down">
+        <h1 class="text-cinzel fw-bold text-center">Our Rooms & Suites</h1>
+      </div>
+    </div>
+
+    <!-- Room Cards -->
+    <div class="row pd-atas" data-aos="zoom-in">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/home/5.png" class="card-img-top img-fluid" alt="Deluxe Room">
+          <div class="card-body">
+            <h5 class="card-title">Deluxe Room</h5>
+            <p class="card-text">Nyaman dengan desain modern minimalis, cocok untuk pasangan atau solo traveler.</p>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <span style="color: black;">4.8</span>
+            <i class="bi bi-person-fill"></i>
+            <span>1-2 orang</span><br><br>
+            <a href="#" class="btn color-blue bttn">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/home/6.png" class="card-img-top img-fluid" alt="Executive Room">
+          <div class="card-body">
+            <h5 class="card-title">Executive Room</h5>
+            <p class="card-text">Lebih luas dengan fasilitas tambahan, ideal untuk perjalanan bisnis.</p>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <span style="color: black;">4.8</span>
+            <i class="bi bi-person-fill"></i>
+            <span>1 orang</span><br><br>
+            <a href="#" class="btn color-blue bttn">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/home/7.png" class="card-img-top img-fluid" alt="Junior Suite">
+          <div class="card-body">
+            <h5 class="card-title">Junior Suite</h5>
+            <p class="card-text">Memiliki ruang tamu kecil terpisah, memberikan kenyamanan ekstra.</p>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <span style="color: black;">4.8</span>
+            <i class="bi bi-person-fill"></i>
+            <span>1-2 orang</span><br><br>
+            <a href="#" class="btn color-blue bttn">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rekomendasi -->
+    <div class="row pd-atas" data-aos="zoom-in">
+      <div class="col-lg-6">
+        <h1 class="text-poppins fw-bold">Recomended for you</h1>
+      </div>
+    </div>
+
+    <div class="row pt-5" data-aos="zoom-in">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/home/8.png" class="card-img-top img-fluid" alt="Family Room">
+          <div class="card-body">
+            <h5 class="card-title">Family Room</h5>
+            <p class="card-text">Dirancang untuk keluarga, dengan kapasitas lebih besar dan ruang yang lega.</p>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <span style="color: black;">4.8</span>
+            <i class="bi bi-person-fill"></i>
+            <span>1-8 orang</span><br><br>
+            <a href="#" class="btn color-blue bttn">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/home/9.png" class="card-img-top img-fluid" alt="Standard Room">
+          <div class="card-body">
+            <h5 class="card-title">Standard Room</h5>
+            <p class="card-text">Pilihan simple dengan harga terjangkau, tetap nyaman dan fungsional.</p>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <span style="color: black;">4.8</span>
+            <i class="bi bi-person-fill"></i>
+            <span>1 orang</span><br><br>
+            <a href="#" class="btn color-blue bttn">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="img/home/10.png" class="card-img-top img-fluid" alt="Superior Room">
+          <div class="card-body">
+            <h5 class="card-title">Superior Room</h5>
+            <p class="card-text">Lebih luas dari Standard, dengan fasilitas lengkap dan desain elegan.</p>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <span style="color: black;">4.8</span>
+            <i class="bi bi-person-fill"></i>
+            <span>1-2 orang</span><br><br>
+            <a href="#" class="btn color-blue bttn">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Akhir Room -->
+
+
+    <!-- Logo Tengah -->
+    <section class="home"  data-aos="zoom-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 logopth">
+                    <img src="img/home/logo putih.png" alt="" width="120px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Logo Tengah Akhir -->
+
+    <!-- Service -->
+    <section class="pd-atas" id="Service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h1 class="text-cinzel fw-bold text-center">Our Service</h1>
+                    <p class="text-center text-poppins">Di Velora Hotel & Resto, kami menghadirkan pelayanan yang tulus
+                        dan profesional untuk <br>
+                        memastikan setiap momen menginap terasa nyaman dan berkesan.</p>
+                </div>
+            </div>
+            <!-- 1 -->
+            <a href="" class="see-all">See All</a>
+            <div class="card mb-3 mx-auto" style="max-width: 800px;">
+                <div class="row g-0 align-items-center" data-aos="fade-right">
+                    <!-- Gambar -->
+                    <div class="col-md-5">
+                        <img src="img/home/11.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <!-- Konten -->
+                    <div class="col-md-7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">24/7 Concierge & Reception</h5>
+                            <p class="card-text">Layanan ramah setiap saat untuk membantu kebutuhan tamu.</p>
+                           <a href="../Tugas Slicing web 4/pull-pages/service.html" class="btn color-blue">Selengkapnya</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="card mb-3 mx-auto" style="max-width: 800px;">
+                <div class="row g-0 align-items-center" data-aos="fade-left">
+                    <!-- Konten -->
+                    <div class="col-md-7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Fine Dining & Resto</h5>
+                            <p class="card-text">Menyajikan kuliner lokal & internasional dengan cita
+                                rasa terbaik.</p>
+                            <a href="../Tugas Slicing web 4/pull-pages/service.html" class="btn color-blue">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/home/12.png" class="img-fluid rounded-start" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="card mb-3 mx-auto" style="max-width: 800px;">
+                <div class="row g-0 align-items-center" data-aos="fade-right">
+                    <!-- Gambar -->
+                    <div class="col-md-5">
+                        <img src="img/home/13.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <!-- Konten -->
+                    <div class="col-md-7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Wellness & Spa</h5>
+                            <p class="card-text">Relaksasi modern untuk tubuh dan pikiran.</p>
+                            <a href="../Tugas Slicing web 4/pull-pages/service.html" class="btn color-blue">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Service -->
+
+    <!-- Facilities -->
+    <section class="paddingtp" id="Facilities">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <h1 class="text-cinzel fw-bold">Facilities</h1>
+                    <p class="text-poppins">Hotel kami menyediakan berbagai fasilitas untuk kenyamanan dan kebutuhan
+                        Anda <br>
+                        selama menginap, mulai dari tempat bersantai hingga area untuk bekerja.</p>
+                </div>
+            </div>
+            <div id="carousel-gallery" class="carousel slide" data-aos="zoom-in">
+                <div class="nav-suite mx-auto my-5">
+                    <a href="" data-bs-target="#carousel-gallery" data-bs-slide-to="0" class="active atext"
+                        aria-current="true" aria-label="Slide 1">All</a>
+                    <a href="" data-bs-target="#carousel-gallery" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="atext px-2">Dining &
+                        Restaurant</a>
+                    <a href="" data-bs-target="#carousel-gallery" data-bs-slide-to="2" aria-label="Slide 3"
+                        class="atext">Parking</a>
+                    <a href="" data-bs-target="#carousel-gallery" data-bs-slide-to="3" aria-label="Slide 4"
+                        class="atext px-2">Spa</a>
+                    <a href="" data-bs-target="#carousel-gallery" data-bs-slide-to="4" aria-label="Slide 5"
+                        class="atext">Swimming
+                        Pool</a>
+                    <a href="" data-bs-target="#carousel-gallery" data-bs-slide-to="5" aria-label="Slide 6"
+                        class="atext px-2">Gym
+                        & Fitness</a>
+                </div>
+                <div class="carousel-inner">
+                    <!-- All -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/3.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dinning & Restaurant -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/4.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/5.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/6.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Parking -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/7.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/8.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/9.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Spa -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/10.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/11.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/12.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swimming Pool -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/13.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/14.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/15.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gym & Fitness -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/16.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/17.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-lg-4 mb-2">
+                                <img src="img/Gallery/18.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Facilities -->
+
+    <!-- Contact -->
+    <section class="pd-bawah" id="Contact">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12 text-center">
+                    <h1 class="text-cinzel fw-bold">Contact Us</h1>
+                    <p class="text-poppins">Hubungi kami untuk reservasi, pertanyaan, atau informasi lebih lanjut. Tim
+                        kami siap <br>
+                        membantuAnda dengan cepat dan ramah.</p>
+                </div>
+            </div>
+            <div class="row pt-5" data-aos="zoom-out">
+                <div class="col-md-6">
+                    <h1 class="text-interfw-bold">Get In Touch</h1>
+                    <p class="text-poppins fs-5">Kami selalu senang mendengar dari Anda. Hubungi kami <br>untuk
+                        pertanyaan, reservasi, atau informasi
+                        lebih lanjut, <br> dan tim kami akan siap membantu.</p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Jl. Raya Sunset No. 88, Bali</span> <br>
+                    <i class="bi bi-telephone"></i>
+                    <span>+62 361 123456</span> <br>
+                    <i class="bi bi-envelope"></i>
+                    <span>info@velorahotel.com</span>
+                    <h2 class="text-inter fw-bold pt-5">Follow Us :</h2>
+                    <span class="iconify" data-icon="logos:facebook" data-width="30"></span>
+                    <span class="iconify" data-icon="pajamas:twitter" data-width="32"></span>
+                    <span class="iconify" data-icon="skill-icons:instagram" data-width="32"></span>
+                </div>
+                <div class="card" style="width: 24rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Send a message</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputMessage1" class="form-label">Message</label>
+                                <input type="message" class="form-control" id="exampleInputMessage1">
+                            </div>
+                            <button type="submit" class="btn color-blue bttn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer class="pt-3" style="background-color: #66BDFF;" data-aos="fade-up">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    <img src="img/home/logo putih.png" alt="" width="200px">
+                </div>
+                <div class="col-lg-4 textwht">
+                    <h2 class="text-cinzel fw-bold">Velora Hotel & Resto</h2>
+                    <p class="text-poppins fs-5">Velora Hotel & Resto adalah destinasi
+                        sempurna bagi mereka yang mencari
+                        kenyamanan, kehangatan pelayanan,
+                        dan suasana modern nan elegan.
+                        Berlokasi strategis di pusat kota,
+                        hotel ini menawarkan pengalaman
+                        menginap yang memadukan desain
+                        kontemporer dengan sentuhan
+                        kemewahan yang bersahaja.</p>
+                </div>
+                <div class="col-md-2">
+                    <h4><a class="textwht" href="">Quick Links</a></h4>
+                    <div class="fs-4">
+                        <a class="textwht" href="#Home">Home</a><br>
+                        <a class="textwht" href="#About Us">About Us</a><br>
+                        <a class="textwht" href="#Service">Service</a><br>
+                        <a class="textwht" href="#Facilities">Facilities</a>
+                        <a class="textwht" href="#Contact">Contact</a><br>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h4><a class="textwht" href="">Legal / Informasi</a></h4>
+                    <div class="fs-4">
+                        <a class="textwht" href="#">Privacy Policy</a><br>
+                        <a class="textwht" href="#">Terms & Conditions</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2">
+                <div class="col-lg-12">
+                    <p class="textwht fs-5 text-center">© 2025 Velora Hotel & Resto. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
