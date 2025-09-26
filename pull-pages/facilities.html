@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FACILITIES Velora Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- akhir font -->
+    <!-- icon boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- icon iconify -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <!-- animasi aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-aos="fade-down">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/home/logo.png" alt="Logo" width="70" height="54" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pull-pages/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pull-pages/room.html">Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pull-pages/service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#Contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" class="btn color-blue">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Home -->
+    <section class="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pt-5">
+                    <h1 class="judul-text">About Us Velora Hotel</h1>
+                    <div class="booking-form position-absolute start-50 translate-middle-x " data-aos="fade-up">
+                        <div class="row g-0">
+                            <!-- Check In -->
+                            <div class="col border-end border-light">
+                                <div class="booking-field">
+                                    <label class="booking-label">Check In</label>
+                                    <input type="date" class="booking-input" name="checkin-date"
+                                        placeholder="Select date">
+                                </div>
+                            </div>
+                            <!-- Check Out -->
+                            <div class="col border-end border-light">
+                                <div class="booking-field">
+                                    <label class="booking-label">Check Out</label>
+                                    <input type="date" class="booking-input" name="checkout-date"
+                                        placeholder="Select date">
+                                </div>
+                            </div>
+                            <!-- Guest -->
+                            <div class="col border-end border-light">
+                                <div class="booking-field">
+                                    <label class="booking-label">Guest</label>
+                                    <select class="booking-input" name="guest-count">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Promo Code -->
+                            <div class="col">
+                                <div class="booking-field">
+                                    <label class="booking-label">Promo Code</label>
+                                    <input type="text" class="booking-input" name="promo-code" placeholder="promo code">
+                                </div>
+                            </div>
+                            <!-- Book Now Button -->
+                            <div class="col-auto">
+                                <button type="button" class="booking-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Home -->
+
+    <!-- Section Facillities -->
+    <section class="marginbuatats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <h1 class="text-cinzel fw-bold">All Facilities In Velora Hotel</h1>
+                </div>
+            </div>
+            <!-- 1 -->
+            <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-4 text-center text-poppins">
+                    <img src="../img/Gallery/7.png" class="img-fluid rounded-3" alt="">
+                    <h4 class="fw-bold">Parking room</h4>
+                </div>
+                <div class="col-lg-4 text-center text-poppins">
+                    <img src="../img/Gallery/11.png" class="img-fluid rounded-3" alt="">
+                    <h4 class="fw-bold">Spa</h4>
+                </div>
+                <div class="col-lg-4 text-center text-poppins">
+                    <img src="../img/Gallery/13.png" class="img-fluid rounded-3" alt="">
+                    <h4 class="fw-bold">Swimming Poll</h4>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-4 text-center text-poppins">
+                    <img src="../img/Gallery/16.png" class="img-fluid rounded-3" alt="">
+                    <h4 class="fw-bold">Gym</h4>
+                </div>
+                <div class="col-lg-4 text-center text-poppins">
+                    <img src="../img/Gallery/4.png" class="img-fluid rounded-3" alt="">
+                    <h4 class="fw-bold">Restaurant</h4>
+                </div>
+                <div class="col-lg-4 text-center text-poppins">
+                    <img src="../img/Gallery/10.png" class="img-fluid rounded-3" alt="">
+                    <h4 class="fw-bold">Sauna </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Facillities end -->
+
+    <!-- pejelasan -->
+    <section class="margin-service">
+        <div class="container">
+            <!-- 1 -->
+            <div class="row" data-aos="fade-right">
+                <div class="col-lg-4">
+                    <img src="../img/Gallery/2.png" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="col-lg-4 text-poppins">
+                    <h4 class="fw-bold">Kamar & Kenyamanan</h4>
+                    <p>Nikmati kenyamanan maksimal di setiap kamar kami yang dirancang untuk istirahat sempurna. Setiap
+                        kamar dilengkapi AC, Wi-Fi gratis, TV kabel/smart TV, dan lemari/brankas pribadi. Kamar mandi
+                        modern dengan shower atau bath tub memberikan pengalaman relaksasi yang menyenangkan setelah
+                        seharian beraktivitas.</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="row mt-5" data-aos="fade-left">
+                <div class="col-lg-4 offset-lg-4 text-poppins">
+                    <h4 class="fw-bold">Fasilitas Rekreasi & Relaksasi</h4>
+                    <p>Rasakan momen santai dan menyegarkan di hotel kami dengan berbagai fasilitas rekreasi. Berenang
+                        di kolam renang atau infinity pool yang menawan, tetap bugar di gym/fitness center, atau
+                        manjakan diri di spa & sauna. Nikmati juga taman dan area outdoor yang nyaman untuk bersantai
+                        atau menikmati udara segar.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../img/Gallery/14.png" class="img-fluid rounded-3" alt="">
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="row mt-5" data-aos="fade-right">
+                <div class="col-lg-4">
+                    <img src="../img/Gallery/6.png" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="col-lg-4 text-poppins">
+                    <h4 class="fw-bold">Makanan & Minuman</h4>
+                    <p>Nikmati pengalaman kuliner yang lezat di hotel kami. Kami menyediakan restoran dan café dengan
+                        menu beragam, room service 24 jam untuk kenyamanan Anda, sarapan pagi yang menggugah selera,
+                        serta bar/lounge untuk bersantai sambil menikmati minuman favorit.</p>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="row mt-5" data-aos="fade-left">
+                <div class="col-lg-4 offset-lg-4 text-poppins">
+                    <h4 class="fw-bold">Fasilitas Umum</h4>
+                    <p>Kami menghadirkan berbagai layanan untuk kenyamanan Anda selama menginap. Mulai dari resepsionis
+                        24 jam, layanan laundry & dry cleaning, area parkir, lift, hingga penyimpanan bagasi. Semua
+                        dirancang agar pengalaman menginap Anda menjadi mudah dan menyenangkan.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../img/home/11.png" class="img-fluid rounded-3" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pejelasan End -->
+
+    <!-- Footer -->
+    <footer class="margin-service" style="background-color: #66BDFF;" data-aos="fade-up">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-lg-2">
+                    <img src="../img/home/logo putih.png" class="mb-3" alt="Logo Velora Hotel & Resto" width="200px">
+                </div>
+
+                <!-- Deskripsi -->
+                <div class="col-lg-4 textwht">
+                    <h2 class="text-cinzel fw-bold">Velora Hotel & Resto</h2>
+                    <p class="text-poppins fs-5">
+                        Velora Hotel & Resto adalah destinasi sempurna bagi mereka yang mencari kenyamanan,
+                        kehangatan pelayanan, dan suasana modern nan elegan. Berlokasi strategis di pusat kota,
+                        hotel ini menawarkan pengalaman menginap yang memadukan desain kontemporer dengan
+                        sentuhan kemewahan yang bersahaja.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="textwht">Quick Links</h4>
+                    <div class="fs-4">
+                        <a class="textwht" href="../index.html">Home</a><br>
+                        <a class="textwht" href="#">About Us</a><br>
+                        <a class="textwht" href="../index.html#Service">Service</a><br>
+                        <a class="textwht" href="../index.html#Facilities">Facilities</a><br>
+                        <a class="textwht" href="../index.html#Contact">Contact</a><br>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="textwht">Legal / Informasi</h4>
+                    <div class="fs-4">
+                        <a class="textwht" href="#">Privacy Policy</a><br>
+                        <a class="textwht" href="#">Terms & Conditions</a><br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row pt-2">
+                <div class="col-lg-12">
+                    <p class="textwht fs-5 text-center">
+                        © 2025 Velora Hotel & Resto. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

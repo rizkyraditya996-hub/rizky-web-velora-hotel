@@ -1,0 +1,202 @@
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* untuk button */
+.color-blue {
+  background-color: #2A9DF4;
+  color: white;
+}
+
+/* gambar home */
+.home {
+  background-image: url("img/home/1.png");
+  background-size: cover;   /* bisa diganti contain, auto, dll */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 380px;
+  position: relative;
+}
+
+/* Untuk layar kecil (HP) */
+@media (max-width: 768px) {
+  .home {
+    min-height: 250px;  /* tinggi lebih kecil di HP */
+  }
+}
+
+/* Untuk layar sangat kecil */
+@media (max-width: 480px) {
+  .home {
+    min-height: 180px;
+  }
+}
+
+
+/* untuk judul di home */
+.judul-text {
+  font-family: 'inter', 'poppins', serif;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 150px;
+}
+
+/* Booking form default (mobile) */
+.booking-form {
+  position: static;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .booking-form {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;        /* ubah dari 90% ke 100% */
+    max-width: 900px;
+    margin-top: 0;
+  }
+}
+
+
+
+.booking-field {
+  position: relative;
+  padding: 0 15px;
+  border-right: 1px solid #ddd;
+  flex: 1;
+}
+
+.booking-field:last-child {
+  border-right: none;
+}
+
+.booking-label {
+  display: block;
+  font-family: "cormorant", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.booking-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "cormorant", serif;
+  font-size: 18px;
+  color: black;
+  padding: 8px 0;
+  padding-right: 25px;
+}
+
+.booking-input::placeholder {
+  color: #777;
+  font-size: 16px;
+}
+
+.booking-input:focus {
+  color: #333;
+}
+
+.booking-btn {
+  background: #2A9DF4;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-family: "cormorant", serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.booking-btn:hover {
+  background: #3049E6;
+}
+
+/* padding atas bawah */
+.paddingtp {
+  margin-top: 200px; 
+  margin-bottom: 200px;
+}
+
+/* untuk font cinzel */
+.text-cinzel {
+  font-family: 'cinzel', 'inter','poppins', serif;
+}
+
+/* ubtuk font poppins */
+.text-poppins {
+  font-family: 'poppins', 'inter', serif;
+}
+
+/* untuk font inter */
+.text-inter {
+  font-family: 'inter', 'poppins', serif;
+}
+
+
+/* untuk padding atas */
+.pd-atas {
+  padding-top: 130px;
+}
+
+/* untuk padding bawah */
+.pd-bawah {
+  padding-bottom: 200px;
+}
+
+/* untuk panjang button */
+.bttn {
+  padding-left: 134px;
+  padding-right: 134px;
+  display: flex;
+  justify-content: center;
+}
+
+/* logo putih */
+.logopth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+/* untuk text a agar warna hitam */
+.atext {
+  color: black;
+}
+
+.textwht {
+  color: white;
+}
+
+/* untuk bagian our service */
+.margin-service {
+  margin-top: 255px;
+}
+
+.marginbuatats {
+  margin-top: 320px;
+}
+
